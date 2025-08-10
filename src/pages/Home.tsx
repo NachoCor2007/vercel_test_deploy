@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import '../App.css';
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
         <Link to="/about">Ir a Acerca de</Link>
         <Link to="/contact">Ir a Contacto</Link>
       </div>
+      <Analytics/>
     </div>
   );
 }
